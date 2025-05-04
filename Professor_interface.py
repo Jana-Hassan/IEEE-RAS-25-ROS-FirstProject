@@ -1,4 +1,3 @@
-```python
 
 # professor_interface.py
 
