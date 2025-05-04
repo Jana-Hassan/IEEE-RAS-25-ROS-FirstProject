@@ -1,18 +1,5 @@
-#database
-student_db = {
-    101: ("name 1", "Engineering", 2),
-    102: ("name 2", "Medicine", 3),
-    103: ("name 3", "Business", 1)
-}
-
-course_db = {
-    "Math101": 1,
-    "Physics201": 2,
-    "Surgery301": 3,
-    "Finance101": 1,
-    "Control202": 2,
-
-}
+from registration import register_course # Call the function
+from course_data import course_db # Call the function
 
 
 class Student:
@@ -24,23 +11,8 @@ class Student:
         self.courses = []
         self.grades = {}
 
-    def register_course(self, course_id):
-        if course_id not in course_db:
-            print("Invalid course.")
-        required_level = course_db[course_id]
-        if self.level < required_level:
-            print(f"Cannot register for {course_id}. It requires level {required_level}.")
-            return
-
-        if len(self.courses) >= 7:
-            print("Course limit reached. Max is 7.")
-            return
-
-        if course_id in self.courses:
-            print(f"Already registered in {course_id}.")
-        else:
-            self.courses.append(course_id)
-            print(f"Course {course_id} registered successfully.")
+    def register(self, course_id):
+        register_course(self, course_id)
 
     def view_grades(self):
         if self.grades:
@@ -50,13 +22,10 @@ class Student:
             print("No grades available.")
 
 
-#  Main page
-
 def main():
     print(" Welcome to the Student System ")
     student = None
 
-    # registration first
     while not student:
         try:
             student_id = int(input("Enter your ID: "))
@@ -79,7 +48,7 @@ def main():
 
         if choice == "1":
             course_id = input("Enter course ID: ")
-            student.register_course(course_id)
+            student.register(course_id)  # Call the function
         elif choice == "2":
             student.view_grades()
         elif choice == "3":
@@ -87,5 +56,6 @@ def main():
             break
         else:
             print("Invalid choice. Try again.")
+
 
 main()
