@@ -1,24 +1,26 @@
 class Course:
-    def __init__(self, course_id, name, department, level, college):
+    def __init__(self, course_id, name, department, level, college, credit_hours):
         self.course_id = course_id
         self.name = name
         self.department = department
         self.level = level
         self.college = college
+        self.credit_hours = credit_hours
         self.professors = []
         self.students = {}
+    
 
     def add_student(self, student_id, student_name, student_level, student_college):
         if student_id in self.students:
-            print(f"Student {student_name} (ID: {student_id}) is already enrolled in this course.")
+            print(f"Student {student_name} is already enrolled in this course.")
             return False
         
         if student_level != self.level:
-            print(f"Student level ({student_level}) does not match course level ({self.level}).")
+            print(f"Student level does not match course level ({self.level}).")
             return False
         
         if student_college != self.college:
-            print(f"Student college ({student_college}) does not match course college ({self.college}).")
+            print(f"Student college does not match course college ({self.college}).")
             return False
         
         self.students[student_id] = {
@@ -37,8 +39,8 @@ class Course:
         return True
 
     def assign_professor(self, professor_id, professor_name):
-        for prof in self.professors:
-            if prof['id'] == professor_id:
+        for p in self.professors:
+            if p['id'] == professor_id:
                 print(f"Professor {professor_name} is already assigned to this course.")
                 return False
         
@@ -49,16 +51,16 @@ class Course:
         return True
 
     def remove_professor(self, professor_id):
-        for i, prof in enumerate(self.professors):
-            if prof['id'] == professor_id:
+        for i, p in enumerate(self.professors):
+            if p['id'] == professor_id:
                 self.professors.pop(i)
                 return True
-        print(f"Professor with ID {professor_id} is not assigned to this course.")
+        print(f"Professor is not assigned to this course.")
         return False
 
     def add_grade(self, student_id, grade):
         if student_id not in self.students:
-            print(f"Student with ID {student_id} is not enrolled in this course.")
+            print(f"Student is not enrolled in this course.")
             return False
         
         student = self.students[student_id]
@@ -67,7 +69,7 @@ class Course:
 
     def add_attendance(self, student_id, date, present):
         if student_id not in self.students:
-            print(f"Student with ID {student_id} is not enrolled in this course.")
+            print(f"Student is not enrolled in this course.")
             return False
         
         student = self.students[student_id]
@@ -90,18 +92,19 @@ class Course:
             'department': self.department,
             'level': self.level,
             'college': self.college,
+            'credit_hours': self.credit_hours,
             'professors': self.professors,
             'students': self.students
         }
 
-    @classmethod
     def from_dict(cls, data):
         course = cls(
             data['course_id'],
             data['name'],
             data['department'],
             data['level'],
-            data['college']
+            data['college'],
+            data['credit_hours']
         )
         course.professors = data['professors']
         course.students = data['students']
