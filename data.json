@@ -1,0 +1,1499 @@
+{
+    "students": {
+        "1": {
+            "student_id": "1",
+            "name": "Jana Hassan",
+            "level": "3",
+            "college": "Computer Science",
+            "department": "Information Technology",
+            "courses": {
+                "it101": {
+                    "name": "Introduction to Programming",
+                    "credit_hours": 3,
+                    "grade": "B-",
+                    "attendance": [
+                        {
+                            "date": "2025-05-06",
+                            "present": true
+                        }
+                    ]
+                },
+                "it102": {
+                    "name": "Web Development",
+                    "credit_hours": 3,
+                    "grade": "B+",
+                    "attendance": []
+                },
+                "it103": {
+                    "name": "Database Systems",
+                    "credit_hours": 3,
+                    "grade": "A-",
+                    "attendance": []
+                },
+                "cs101": {
+                    "name": "Machine Learning",
+                    "credit_hours": 3,
+                    "grade": null,
+                    "attendance": []
+                },
+                "cs102": {
+                    "name": "Artificial Intelligence",
+                    "credit_hours": 3,
+                    "grade": null,
+                    "attendance": []
+                },
+                "cs103": {
+                    "name": "Operating Systems",
+                    "credit_hours": 3,
+                    "grade": null,
+                    "attendance": []
+                }
+            }
+        },
+        "2": {
+            "student_id": "2",
+            "name": "Abdullah Ahmed",
+            "level": "2",
+            "college": "Engineering",
+            "department": "Mechatronics",
+            "courses": {
+                "mt101": {
+                    "name": "Introduction to Robotics",
+                    "credit_hours": 4,
+                    "grade": "B"
+                },
+                "mt102": {
+                    "name": "Control Systems",
+                    "credit_hours": 4,
+                    "grade": "A"
+                }
+            },
+            "attendance": []
+        },
+        "3": {
+            "student_id": "3",
+            "name": "Mohammed Adel",
+            "level": "1",
+            "college": "Engineering",
+            "department": "Mechatronics",
+            "courses": {
+                "mt101": {
+                    "name": "Introduction to Robotics",
+                    "credit_hours": 4,
+                    "grade": "C+"
+                }
+            },
+            "attendance": []
+        },
+        "4": {
+            "student_id": "4",
+            "name": "Esraa Mohammed",
+            "level": "3",
+            "college": "Medicine",
+            "department": "General Medicine",
+            "courses": {
+                "md101": {
+                    "name": "Anatomy",
+                    "credit_hours": 5,
+                    "grade": "A+"
+                },
+                "md102": {
+                    "name": "Physiology",
+                    "credit_hours": 5,
+                    "grade": "A"
+                },
+                "md103": {
+                    "name": "Pathology",
+                    "credit_hours": 5,
+                    "grade": "B+"
+                }
+            },
+            "attendance": []
+        },
+        "5": {
+            "student_id": "5",
+            "name": "Abdelrahman Mohammoud",
+            "level": "3",
+            "college": "Business",
+            "department": "Marketing",
+            "courses": {
+                "mk101": {
+                    "name": "Marketing Principles",
+                    "credit_hours": 3,
+                    "grade": "A-"
+                },
+                "mk102": {
+                    "name": "Consumer Behavior",
+                    "credit_hours": 3,
+                    "grade": "B+"
+                },
+                "mk103": {
+                    "name": "Digital Marketing",
+                    "credit_hours": 3,
+                    "grade": "A"
+                }
+            },
+            "attendance": []
+        },
+        "9": {
+            "student_id": "9",
+            "name": "Hla Khaled",
+            "level": "3",
+            "college": "Computer Science",
+            "department": "Information Technology",
+            "courses": {}
+        }
+    },
+    "professors": {
+        "11": {
+            "professor_id": "11",
+            "name": "Dr. Ahmed Hassan",
+            "department": "Information Technology",
+            "college": "Computer Science",
+            "courses": {
+                "it101": "Introduction to Programming",
+                "it102": "Web Development",
+                "it103": "Database Systems",
+                "it104": "Network Security",
+                "cs101": "Machine Learning",
+                "cs102": "Artificial Intelligence",
+                "cs103": "Operating Systems",
+                "cs104": "Computer Networks"
+            }
+        },
+        "22": {
+            "professor_id": "22",
+            "name": "Dr. Mohammed Ali",
+            "department": "Mechatronics",
+            "college": "Engineering",
+            "courses": {
+                "mt101": "Introduction to Robotics",
+                "me101": "Mechanics",
+                "me102": "Thermodynamics"
+            }
+        },
+        "33": {
+            "professor_id": "33",
+            "name": "Dr. Sarah Ahmed",
+            "department": "General Medicine",
+            "college": "Medicine",
+            "courses": {
+                "md101": "Anatomy",
+                "md102": "Physiology",
+                "md103": "Pathology",
+                "md104": "Clinical Skills",
+                "ph101": "Pharmaceutical Chemistry",
+                "ph102": "Pharmacology",
+                "dt102": "Oral Pathology"
+            }
+        }
+    },
+    "post_operations": {
+        "course_registration": {
+            "initialize_records": {
+                "attendance": [],
+                "grade": null,
+                "notifications": {
+                    "enabled": true,
+                    "email": true,
+                    "sms": false
+                },
+                "registration_date": null,
+                "status": "active"
+            },
+            "update_course": {
+                "increment_enrolled": true,
+                "update_roster": true,
+                "notify_professor": true
+            },
+            "update_student": {
+                "add_to_schedule": true,
+                "calculate_total_credits": true,
+                "update_academic_status": true
+            }
+        }
+    },
+    "courses": {
+        "it101": {
+            "course_id": "it101",
+            "name": "Introduction to Programming",
+            "department": "Information Technology",
+            "level": "1",
+            "college": "Computer Science",
+            "credit_hours": 3,
+            "professor_id": "11",
+            "professors": [
+                {
+                    "professor_id": "11",
+                    "name": "Dr. Ahmed Hassan",
+                    "department": "Information Technology",
+                    "college": "Computer Science",
+                    "courses": {
+                        "it101": "Introduction to Programming",
+                        "it102": "Web Development",
+                        "it103": "Database Systems",
+                        "it104": "Network Security",
+                        "cs101": "Machine Learning",
+                        "cs102": "Artificial Intelligence",
+                        "cs103": "Operating Systems",
+                        "cs104": "Computer Networks"
+                    }
+                }
+            ],
+            "students": {
+                "1": {
+                    "name": "Jana Hassan",
+                    "grade": "B-",
+                    "attendance": [
+                        {
+                            "date": "2025-05-06",
+                            "present": true
+                        },
+                        {
+                            "date": "2025-05-06",
+                            "present": true
+                        }
+                    ]
+                }
+            }
+        },
+        "it102": {
+            "course_id": "it102",
+            "name": "Web Development",
+            "department": "Information Technology",
+            "level": "2",
+            "college": "Computer Science",
+            "credit_hours": 3,
+            "professor_id": "11",
+            "professors": [
+                {
+                    "professor_id": "11",
+                    "name": "Dr. Ahmed Hassan",
+                    "department": "Information Technology",
+                    "college": "Computer Science",
+                    "courses": {}
+                }
+            ],
+            "students": {
+                "1": {
+                    "name": "Jana Hassan",
+                    "grade": "B+",
+                    "attendance": []
+                }
+            }
+        },
+        "it103": {
+            "course_id": "it103",
+            "name": "Database Systems",
+            "department": "Information Technology",
+            "level": "3",
+            "college": "Computer Science",
+            "credit_hours": 3,
+            "professor_id": "11",
+            "professors": [
+                {
+                    "professor_id": "11",
+                    "name": "Dr. Ahmed Hassan",
+                    "department": "Information Technology",
+                    "college": "Computer Science",
+                    "courses": {}
+                }
+            ],
+            "students": {
+                "1": {
+                    "name": "Jana Hassan",
+                    "grade": "A-",
+                    "attendance": []
+                }
+            }
+        },
+        "it104": {
+            "course_id": "it104",
+            "name": "Network Security",
+            "department": "Information Technology",
+            "level": "4",
+            "college": "Computer Science",
+            "credit_hours": 3,
+            "professor_id": "11",
+            "professors": [
+                {
+                    "professor_id": "11",
+                    "name": "Dr. Ahmed Hassan",
+                    "department": "Information Technology",
+                    "college": "Computer Science",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "mt101": {
+            "course_id": "mt101",
+            "name": "Introduction to Robotics",
+            "department": "Mechatronics",
+            "level": "1",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {
+                "2": {
+                    "name": "Abdullah Ahmed",
+                    "grade": "B",
+                    "attendance": []
+                },
+                "3": {
+                    "name": "Mohammed Adel",
+                    "grade": "C+",
+                    "attendance": []
+                }
+            }
+        },
+        "mt102": {
+            "course_id": "mt102",
+            "name": "Control Systems",
+            "department": "Mechatronics",
+            "level": "2",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {
+                "2": {
+                    "name": "Abdullah Ahmed",
+                    "grade": "A",
+                    "attendance": []
+                }
+            }
+        },
+        "mt103": {
+            "course_id": "mt103",
+            "name": "Industrial Automation",
+            "department": "Mechatronics",
+            "level": "3",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "mt104": {
+            "course_id": "mt104",
+            "name": "Embedded Systems",
+            "department": "Mechatronics",
+            "level": "4",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "md101": {
+            "course_id": "md101",
+            "name": "Anatomy",
+            "department": "General Medicine",
+            "level": "1",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {
+                "4": {
+                    "name": "Esraa Mohammed",
+                    "grade": "A+",
+                    "attendance": []
+                }
+            }
+        },
+        "md102": {
+            "course_id": "md102",
+            "name": "Physiology",
+            "department": "General Medicine",
+            "level": "1",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {
+                "4": {
+                    "name": "Esraa Mohammed",
+                    "grade": "A",
+                    "attendance": []
+                }
+            }
+        },
+        "md103": {
+            "course_id": "md103",
+            "name": "Pathology",
+            "department": "General Medicine",
+            "level": "3",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {
+                "4": {
+                    "name": "Esraa Mohammed",
+                    "grade": "B+",
+                    "attendance": []
+                }
+            }
+        },
+        "md104": {
+            "course_id": "md104",
+            "name": "Clinical Skills",
+            "department": "General Medicine",
+            "level": "4",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "mk101": {
+            "course_id": "mk101",
+            "name": "Marketing Principles",
+            "department": "Marketing",
+            "level": "1",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {
+                "5": {
+                    "name": "Abdelrahman Mohammoud",
+                    "grade": "A-",
+                    "attendance": []
+                }
+            }
+        },
+        "mk102": {
+            "course_id": "mk102",
+            "name": "Consumer Behavior",
+            "department": "Marketing",
+            "level": "2",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {
+                "5": {
+                    "name": "Abdelrahman Mohammoud",
+                    "grade": "B+",
+                    "attendance": []
+                }
+            }
+        },
+        "mk103": {
+            "course_id": "mk103",
+            "name": "Digital Marketing",
+            "department": "Marketing",
+            "level": "3",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {
+                "5": {
+                    "name": "Abdelrahman Mohammoud",
+                    "grade": "A",
+                    "attendance": []
+                }
+            }
+        },
+        "mk104": {
+            "course_id": "mk104",
+            "name": "Brand Management",
+            "department": "Marketing",
+            "level": "4",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {}
+        },
+        "cs101": {
+            "course_id": "cs101",
+            "name": "Machine Learning",
+            "department": "Computer Science",
+            "level": "1",
+            "college": "Computer Science",
+            "credit_hours": 3,
+            "professor_id": "11",
+            "professors": [
+                {
+                    "professor_id": "11",
+                    "name": "Dr. Ahmed Hassan",
+                    "department": "Information Technology",
+                    "college": "Computer Science",
+                    "courses": {}
+                }
+            ],
+            "students": {
+                "1": {
+                    "name": "Jana Hassan",
+                    "grade": null,
+                    "attendance": []
+                }
+            }
+        },
+        "cs102": {
+            "course_id": "cs102",
+            "name": "Artificial Intelligence",
+            "department": "Computer Science",
+            "level": "2",
+            "college": "Computer Science",
+            "credit_hours": 3,
+            "professor_id": "11",
+            "professors": [
+                {
+                    "professor_id": "11",
+                    "name": "Dr. Ahmed Hassan",
+                    "department": "Information Technology",
+                    "college": "Computer Science",
+                    "courses": {}
+                }
+            ],
+            "students": {
+                "1": {
+                    "name": "Jana Hassan",
+                    "grade": null,
+                    "attendance": []
+                }
+            }
+        },
+        "cs103": {
+            "course_id": "cs103",
+            "name": "Operating Systems",
+            "department": "Computer Science",
+            "level": "3",
+            "college": "Computer Science",
+            "credit_hours": 3,
+            "professor_id": "11",
+            "professors": [
+                {
+                    "professor_id": "11",
+                    "name": "Dr. Ahmed Hassan",
+                    "department": "Information Technology",
+                    "college": "Computer Science",
+                    "courses": {}
+                }
+            ],
+            "students": {
+                "1": {
+                    "name": "Jana Hassan",
+                    "grade": null,
+                    "attendance": []
+                }
+            }
+        },
+        "cs104": {
+            "course_id": "cs104",
+            "name": "Computer Networks",
+            "department": "Computer Science",
+            "level": "4",
+            "college": "Computer Science",
+            "credit_hours": 3,
+            "professor_id": "11",
+            "professors": [
+                {
+                    "professor_id": "11",
+                    "name": "Dr. Ahmed Hassan",
+                    "department": "Information Technology",
+                    "college": "Computer Science",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "me101": {
+            "course_id": "me101",
+            "name": "Mechanics",
+            "department": "Mechanical",
+            "level": "1",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "me102": {
+            "course_id": "me102",
+            "name": "Thermodynamics",
+            "department": "Mechanical",
+            "level": "2",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "me103": {
+            "course_id": "me103",
+            "name": "Fluid Mechanics",
+            "department": "Mechanical",
+            "level": "3",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "me104": {
+            "course_id": "me104",
+            "name": "Heat Transfer",
+            "department": "Mechanical",
+            "level": "4",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "ee101": {
+            "course_id": "ee101",
+            "name": "Circuit Analysis",
+            "department": "Electrical",
+            "level": "1",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "ee102": {
+            "course_id": "ee102",
+            "name": "Electronics",
+            "department": "Electrical",
+            "level": "2",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "ee103": {
+            "course_id": "ee103",
+            "name": "Power Systems",
+            "department": "Electrical",
+            "level": "3",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "ee104": {
+            "course_id": "ee104",
+            "name": "Control Systems",
+            "department": "Electrical",
+            "level": "4",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "ce101": {
+            "course_id": "ce101",
+            "name": "Structural Analysis",
+            "department": "Civil",
+            "level": "1",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "ce102": {
+            "course_id": "ce102",
+            "name": "Geotechnical Engineering",
+            "department": "Civil",
+            "level": "2",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "ce103": {
+            "course_id": "ce103",
+            "name": "Transportation Engineering",
+            "department": "Civil",
+            "level": "3",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "ce104": {
+            "course_id": "ce104",
+            "name": "Environmental Engineering",
+            "department": "Civil",
+            "level": "4",
+            "college": "Engineering",
+            "credit_hours": 4,
+            "professor_id": "22",
+            "professors": [
+                {
+                    "professor_id": "22",
+                    "name": "Dr. Mohammed Ali",
+                    "department": "Mechatronics",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "ph101": {
+            "course_id": "ph101",
+            "name": "Pharmaceutical Chemistry",
+            "department": "Pharmacy",
+            "level": "1",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "ph102": {
+            "course_id": "ph102",
+            "name": "Pharmacology",
+            "department": "Pharmacy",
+            "level": "2",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "ph103": {
+            "course_id": "ph103",
+            "name": "Clinical Pharmacy",
+            "department": "Pharmacy",
+            "level": "3",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "ph104": {
+            "course_id": "ph104",
+            "name": "Pharmacy Practice",
+            "department": "Pharmacy",
+            "level": "4",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "dt101": {
+            "course_id": "dt101",
+            "name": "Dental Anatomy",
+            "department": "Dentistry",
+            "level": "1",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "dt102": {
+            "course_id": "dt102",
+            "name": "Oral Pathology",
+            "department": "Dentistry",
+            "level": "2",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "dt103": {
+            "course_id": "dt103",
+            "name": "Dental Materials",
+            "department": "Dentistry",
+            "level": "3",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "dt104": {
+            "course_id": "dt104",
+            "name": "Clinical Dentistry",
+            "department": "Dentistry",
+            "level": "4",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "nr101": {
+            "course_id": "nr101",
+            "name": "Nursing Fundamentals",
+            "department": "Nursing",
+            "level": "1",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "nr102": {
+            "course_id": "nr102",
+            "name": "Health Assessment",
+            "department": "Nursing",
+            "level": "2",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "nr103": {
+            "course_id": "nr103",
+            "name": "Medical-Surgical Nursing",
+            "department": "Nursing",
+            "level": "3",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "nr104": {
+            "course_id": "nr104",
+            "name": "Community Health Nursing",
+            "department": "Nursing",
+            "level": "4",
+            "college": "Medicine",
+            "credit_hours": 5,
+            "professor_id": "33",
+            "professors": [
+                {
+                    "professor_id": "33",
+                    "name": "Dr. Sarah Ahmed",
+                    "department": "General Medicine",
+                    "college": "Medicine",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "ba101": {
+            "course_id": "ba101",
+            "name": "Business Management",
+            "department": "Business Administration",
+            "level": "1",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {}
+        },
+        "ba102": {
+            "course_id": "ba102",
+            "name": "Organizational Behavior",
+            "department": "Business Administration",
+            "level": "2",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {}
+        },
+        "ba103": {
+            "course_id": "ba103",
+            "name": "Strategic Management",
+            "department": "Business Administration",
+            "level": "3",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {}
+        },
+        "ba104": {
+            "course_id": "ba104",
+            "name": "Business Ethics",
+            "department": "Business Administration",
+            "level": "4",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {}
+        },
+        "ac101": {
+            "course_id": "ac101",
+            "name": "Financial Accounting",
+            "department": "Accounting",
+            "level": "1",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {}
+        },
+        "ac102": {
+            "course_id": "ac102",
+            "name": "Managerial Accounting",
+            "department": "Accounting",
+            "level": "2",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {}
+        },
+        "ac103": {
+            "course_id": "ac103",
+            "name": "Auditing",
+            "department": "Accounting",
+            "level": "3",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {}
+        },
+        "ac104": {
+            "course_id": "ac104",
+            "name": "Taxation",
+            "department": "Accounting",
+            "level": "4",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {}
+        },
+        "fi101": {
+            "course_id": "fi101",
+            "name": "Financial Management",
+            "department": "Finance",
+            "level": "1",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {}
+        },
+        "fi102": {
+            "course_id": "fi102",
+            "name": "Investment Analysis",
+            "department": "Finance",
+            "level": "2",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {}
+        },
+        "fi103": {
+            "course_id": "fi103",
+            "name": "Corporate Finance",
+            "department": "Finance",
+            "level": "3",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {}
+        },
+        "fi104": {
+            "course_id": "fi104",
+            "name": "International Finance",
+            "department": "Finance",
+            "level": "4",
+            "college": "Business",
+            "credit_hours": 3,
+            "professor_id": null,
+            "professors": [],
+            "students": {}
+        },
+        "56": {
+            "course_id": "56",
+            "name": "ML",
+            "department": "Computer Science",
+            "level": "3",
+            "college": "College of Computer Science",
+            "credit_hours": 2,
+            "professors": [],
+            "students": {}
+        },
+        "cs301": {
+            "course_id": "cs301",
+            "name": "Advanced Database Systems",
+            "department": "Computer Science",
+            "level": "3",
+            "college": "Engineering",
+            "credit_hours": 3,
+            "professor_id": "22",
+            "professors": [],
+            "students": {}
+        },
+        "cs302": {
+            "course_id": "cs302",
+            "name": "Web Development",
+            "department": "Computer Science",
+            "level": "3",
+            "college": "Engineering",
+            "credit_hours": 3,
+            "professor_id": "22",
+            "professors": [],
+            "students": {}
+        },
+        "it301": {
+            "course_id": "it301",
+            "name": "Cloud Computing",
+            "department": "Information Technology",
+            "level": "3",
+            "college": "Computer Science",
+            "credit_hours": 3,
+            "professor_id": "11",
+            "professors": [
+                {
+                    "professor_id": "11",
+                    "name": "Dr. Ahmed Hassan",
+                    "department": "Information Technology",
+                    "college": "Computer Science",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        },
+        "it302": {
+            "course_id": "it302",
+            "name": "Cybersecurity Fundamentals",
+            "department": "Information Technology",
+            "level": "3",
+            "college": "Computer Science",
+            "credit_hours": 3,
+            "professor_id": "11",
+            "professors": [
+                {
+                    "professor_id": "11",
+                    "name": "Dr. Ahmed Hassan",
+                    "department": "Information Technology",
+                    "college": "Computer Science",
+                    "courses": {}
+                }
+            ],
+            "students": {}
+        }
+    },
+    "colleges": {
+        "Engineering": {
+            "college_id": "eng",
+            "name": "College of Engineering",
+            "departments": {
+                "Mechatronics": {
+                    "dept_id": "mt",
+                    "name": "Mechatronics Department",
+                    "college": "Engineering",
+                    "courses": {}
+                },
+                "Mechanical": {
+                    "dept_id": "me",
+                    "name": "Mechanical Department",
+                    "college": "Engineering",
+                    "courses": {}
+                },
+                "Electrical": {
+                    "dept_id": "ee",
+                    "name": "Electrical Department",
+                    "college": "Engineering",
+                    "courses": {}
+                },
+                "Civil": {
+                    "dept_id": "ce",
+                    "name": "Civil Department",
+                    "college": "Engineering",
+                    "courses": {}
+                }
+            }
+        },
+        "Computer Science": {
+            "college_id": "cs",
+            "name": "College of Computer Science",
+            "departments": {
+                "cs": {
+                    "dept_id": "cs",
+                    "name": "Computer Science Department",
+                    "college": "Computer Science",
+                    "courses": {},
+                    "students": {},
+                    "professors": {}
+                },
+                "it": {
+                    "dept_id": "it",
+                    "name": "Information Technology Department",
+                    "college": "Computer Science",
+                    "courses": {},
+                    "students": {},
+                    "professors": {}
+                },
+                "it01": {
+                    "dept_id": "it01",
+                    "name": "Information Technology",
+                    "college": "College of Computer Science",
+                    "courses": {},
+                    "students": {
+                        "9": {
+                            "student_id": "9",
+                            "name": "Hla Khaled",
+                            "level": "3",
+                            "college": "Computer Science",
+                            "department": "Information Technology",
+                            "courses": {}
+                        }
+                    },
+                    "professors": {}
+                },
+                "cs01": {
+                    "dept_id": "cs01",
+                    "name": "Computer Science",
+                    "college": "College of Computer Science",
+                    "courses": {
+                        "56": {
+                            "course_id": "56",
+                            "name": "ML",
+                            "department": "Computer Science",
+                            "level": "3",
+                            "college": "College of Computer Science",
+                            "credit_hours": 2,
+                            "professors": [],
+                            "students": {}
+                        }
+                    },
+                    "students": {},
+                    "professors": {}
+                }
+            },
+            "students": {}
+        },
+        "Medicine": {
+            "college_id": "med",
+            "name": "College of Medicine",
+            "departments": {
+                "gm": {
+                    "dept_id": "gm",
+                    "name": "General Medicine Department",
+                    "college": "Medicine",
+                    "courses": {},
+                    "students": {},
+                    "professors": {}
+                },
+                "ph": {
+                    "dept_id": "ph",
+                    "name": "Pharmacy Department",
+                    "college": "Medicine",
+                    "courses": {},
+                    "students": {},
+                    "professors": {}
+                },
+                "dt": {
+                    "dept_id": "dt",
+                    "name": "Dentistry Department",
+                    "college": "Medicine",
+                    "courses": {},
+                    "students": {},
+                    "professors": {}
+                },
+                "nr": {
+                    "dept_id": "nr",
+                    "name": "Nursing Department",
+                    "college": "Medicine",
+                    "courses": {},
+                    "students": {},
+                    "professors": {}
+                },
+                "dt02": {
+                    "dept_id": "dt02",
+                    "name": "Dentistry",
+                    "college": "College of Medicine",
+                    "courses": {},
+                    "students": {},
+                    "professors": {}
+                }
+            },
+            "students": {}
+        },
+        "Business": {
+            "college_id": "bus",
+            "name": "College of Business",
+            "departments": {
+                "Business Administration": {
+                    "dept_id": "ba",
+                    "name": "Business Administration Department",
+                    "college": "Business",
+                    "courses": {}
+                },
+                "Accounting": {
+                    "dept_id": "ac",
+                    "name": "Accounting Department",
+                    "college": "Business",
+                    "courses": {}
+                },
+                "Finance": {
+                    "dept_id": "fi",
+                    "name": "Finance Department",
+                    "college": "Business",
+                    "courses": {}
+                },
+                "Marketing": {
+                    "dept_id": "mk",
+                    "name": "Marketing Department",
+                    "college": "Business",
+                    "courses": {}
+                }
+            }
+        }
+    }
+}
