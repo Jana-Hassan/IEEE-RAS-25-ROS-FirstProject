@@ -3,18 +3,18 @@ A simple command-line system for managing university students, professors, and c
 
 ###Features:
 
-### :teacher: STUDENTS
+###  STUDENTS
 - Register for courses (up to 7)
 - View their grades
 - Track attendance
 - View GPA
 
-### :teacher: PROFESSORS
+###  PROFESSORS
 - Mark attendance
 - Assign grades
 - View course students
 
-### :gear: ADMIN
+###  ADMIN
 - Add/remove students
 - Add/remove professors
 - Add/remove courses
